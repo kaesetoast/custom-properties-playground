@@ -1,0 +1,30 @@
+.c-button {
+	--c-button__bg-color: var(--s-color-brand-dark);
+	--c-button__color: var(--s-color-white);
+	--c-button__border-color: var(--c-button__bg-color);
+	padding: 0.7em 1.1em;
+	background-color: var(--c-button__bg-color);
+	color: var(--c-button__color);
+	font-size: 1.2rem;
+	border: 1px solid var(--c-button__border-color);
+	border-radius: 0.2em;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	cursor: pointer;
+
+	&:hover {
+		--c-button__bg-color: var(--s-color-brand-dark--400);
+	}
+
+	&:focus {
+		outline: 0;
+		border: 1px dashed;
+	}
+
+	&--cta {
+		--c-button__bg-color: var(--s-color-brand-light);
+	}
+
+	&--cta:hover {
+		--c-button__bg-color: var(--s-color-brand-light--600);
+	}
+}

@@ -1,0 +1,47 @@
+.c-hero {
+	--c-hero__bg-color: var(--s-color-brand-light--200);
+	padding: 3rem 1rem;
+	background-color: var(--c-hero__bg-color);
+	position: relative;
+
+	@media (min-width: 780px) {
+		padding: 8rem 1rem;
+	}
+
+	&__content {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__headline {
+		margin: 0 0 1rem;
+		font-size: 4rem;
+	}
+
+	&__punchline {
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: var(--s-color-gray--600);
+		line-height: 1.5;
+	}
+
+	&__image {
+		position: absolute;
+		top: 2rem;
+		bottom: 2rem;
+		right: 0;
+		z-index: 0;
+		opacity: 0.1;
+
+		svg {
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		@media (min-width: 1510px) {
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.c-show-off-number {
+	display: grid;
+	grid-template-columns: 3rem 2fr;
+	grid-column-gap: 1.5rem;
+	justify-self: center;
+	align-items: end;
+	grid-template-areas: "icon number" ". value";
+
+	&__icon {
+		grid-area: icon;
+		width: 3rem;
+		height: 3rem;
+
+		path {
+			fill: currentColor;
+		}
+	}
+
+	&__number {
+		grid-area: number;
+		font-size: 3rem;
+		font-weight: 700;
+	}
+
+	&__value {
+		grid-area: value;
+		font-size: 1.2rem;
+	}
+}

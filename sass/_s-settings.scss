@@ -1,0 +1,14 @@
+:root {
+	--s-color-brand-dark: hsl(223, 14%, 50%);
+	--s-color-brand-dark--400: hsl(223, 24%, 63%);
+	--s-color-brand-dark--100: hsl(220, 7%, 84%);
+	--s-color-brand-light: hsl(15, 98%, 61%);
+	--s-color-brand-light--200: hsl(18, 57%, 95%);
+	--s-color-brand-light--600: hsl(15, 72%, 50%);
+	--s-color-brand-complimentary: hsl(218, 85%, 47%);
+	--s-color-black: hsl(240, 2%, 12%);
+	--s-color-white: hsl(240, 60%, 98%);
+	--s-color-gray--600: hsl(240, 10%, 36%);
+	--l-max-content-width: 1860px;
+	color: var(--s-color-black);
+}

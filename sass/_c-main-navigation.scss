@@ -1,0 +1,33 @@
+.c-main-navigation {
+	--c-main-navigation__link-color: var(--s-color-brand-dark);
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+	}
+
+	&__item {
+		margin: 0 1.5em;
+		padding: 0;
+	}
+
+	&__link {
+		padding: 0.5em;
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 600;
+		border: 1px solid transparent;
+		color: var(--c-main-navigation__link-color);
+
+		&:hover {
+			--c-main-navigation__link-color: var(--s-color-brand-light);
+		}
+
+		&:focus {
+			border: 1px dashed var(--c-main-navigation__link-color);
+			outline: 0;
+		}
+	}
+}
